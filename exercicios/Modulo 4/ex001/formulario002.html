@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0x;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formúlario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> 
+        <p>
+            <label for="iname">Username</label>
+            <input type="text" name="username" id="iname" required minlength="5" maxlength="17" size="10" placeholder="Digite seu nome" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="ipass">Senha</label>
+            <input type="password" name="senha" id="ipass" required minlength="8" maxlength="10" placeholder="Senha" size="8" autocomplete="current-password">
+        </p>
+
+        <p>
+            <label for="iy">idade</label>
+            <input type="text" name="idade" id="iy" placeholder="Idade" minlength="2" maxlength="2" autocomplete="bday-year" required size="2">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+
+</body>
+</html>
